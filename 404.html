@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>404 | delome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --gold: #f5c77a;
+            --green: #22c55e;
+            --warm: #fef6e4;
+            --dark: #1f2937;
+            --soft-dark: #374151;
+            --light: #ffffff;
+            --muted: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background:
+                linear-gradient(135deg, #fffaf0, #fef6e4);
+            color: var(--dark);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: var(--light);
+            border-radius: 30px;
+            padding: 80px 40px;
+            text-align: center;
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at top right, rgba(245, 199, 122, 0.25), transparent 60%),
+                radial-gradient(circle at bottom left, rgba(34, 197, 94, 0.18), transparent 60%);
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 110px;
+            margin: 0;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 34px;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: var(--soft-dark);
+            max-width: 620px;
+            margin: 0 auto 40px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 34px;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .btn-home {
+            background: var(--gold);
+            color: #3b2f1e;
+        }
+
+        .btn-home:hover {
+            background: #e6b964;
+        }
+
+        .btn-about {
+            border: 2px solid var(--green);
+            color: var(--green);
+            background: transparent;
+        }
+
+        .btn-about:hover {
+            background: var(--green);
+            color: white;
+        }
+
+        .brand {
+            margin-top: 60px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .brand span {
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 80px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .container {
+                padding: 50px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>404</h1>
+        <h2>This Space Isn’t Designed Yet</h2>
+        <p>
+            The page you’re looking for doesn’t exist —
+            or it’s still being thoughtfully designed.
+            Let’s guide you back to a beautifully crafted space.
+        </p>
+
+        <div class="actions">
+            <a href="index.html" class="btn btn-home">🏡 Back to Home</a>
+            <a href="index.html#services" class="btn btn-about">✨ Explore Our Designs</a>
+        </div>
+
+        <div class="brand">
+            © 2026 <span>delome</span> · Intelligent Home Beautification
+        </div>
+    </div>
+
+</body>
+
+</html>

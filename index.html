@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>delome | Intelligent Home Beautification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --gold: #f5c77a;
+            --green: #22c55e;
+            --warm: #fef6e4;
+            --dark: #1f2937;
+            --soft-dark: #374151;
+            --light: #ffffff;
+            --muted: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(180deg, #fffaf0, #fef6e4);
+            color: var(--dark);
+            line-height: 1.8;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            background:
+                linear-gradient(to bottom right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1)),
+                url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 80px 20px;
+            color: var(--light);
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 22px;
+            max-width: 700px;
+            opacity: 0.95;
+        }
+
+        .hero-buttons {
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 15px;
+            transition: 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: #3b2f1e;
+        }
+
+        .btn-primary:hover {
+            background: #e6b964;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--dark);
+        }
+
+        /* SECTION */
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 100px 20px;
+        }
+
+        section h2 {
+            font-size: 44px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            color: var(--soft-dark);
+            max-width: 900px;
+        }
+
+        /* SERVICES */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .card {
+            background: var(--light);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .card span {
+            font-size: 32px;
+        }
+
+        /* EXPERIENCE */
+        .experience {
+            background: linear-gradient(180deg, #f9fafb, #fff);
+            border-radius: 40px;
+            padding: 80px;
+            margin-top: 60px;
+        }
+
+        .experience h3 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        /* STATS */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .stat {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 24px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.07);
+        }
+
+        .stat h4 {
+            font-size: 42px;
+            color: var(--green);
+            margin-bottom: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 100px;
+        }
+
+        footer span {
+            color: var(--gold);
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            section h2 {
+                font-size: 32px;
+            }
+
+            .experience {
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1><span>delome</span></h1>
+            <p>
+                Redefining home living through intelligent lighting, natural greenery,
+                and AI-powered design — turning houses into beautifully living spaces.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Explore Our Services</a>
+                <a href="#experience" class="btn btn-outline">Our Design Philosophy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section>
+        <h2>Designing Homes That Feel Alive</h2>
+        <p>
+            delome is a modern home beautification studio that blends lighting design,
+            indoor plants, and artificial intelligence to create spaces that feel warm,
+            calming, and deeply personal.
+            <br><br>
+            We don’t just decorate homes — we craft experiences. Every light placement,
+            plant selection, and AI-driven layout decision is carefully curated to match
+            your lifestyle, mood, and architectural flow.
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>Our Core Services</h2>
+
+        <div class="grid">
+            <div class="card">
+                <span>💡</span>
+                <h3>Architectural Lighting</h3>
+                <p>
+                    Ambient, accent, and smart lighting designs that enhance mood,
+                    highlight textures, and bring warmth into every corner of your home.
+                </p>
+            </div>
+
+            <div class="card">
+                <span>🌿</span>
+                <h3>Indoor & Outdoor Greenery</h3>
+                <p>
+                    Thoughtfully selected plants that improve air quality,
+                    aesthetics, and emotional well-being.
+                </p>
+            </div>
+
+            <div class="card">
+                <span>🧠</span>
+                <h3>AI-Powered Space Design</h3>
+                <p>
+                    Using AI to analyze space, light flow, and movement patterns
+                    to create balanced and functional interiors.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="experience">
+            <h3>Where Technology Meets Tranquility</h3>
+            <p>
+                Our AI models study your home’s layout, natural light availability,
+                and daily usage patterns to recommend the perfect combination of
+                lighting intensity, plant placement, and decor flow.
+                <br><br>
+                The result is a space that feels intuitive, peaceful, and
+                effortlessly beautiful — day and night.
+            </p>
+
+            <div class="stats">
+                <div class="stat">
+                    <h4>500+</h4>
+                    <p>Homes Transformed</p>
+                </div>
+                <div class="stat">
+                    <h4>100%</h4>
+                    <p>Custom Designs</p>
+                </div>
+                <div class="stat">
+                    <h4>24/7</h4>
+                    <p>Smart Lighting Control</p>
+                </div>
+                <div class="stat">
+                    <h4>∞</h4>
+                    <p>Design Possibilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 <span>delome</span> · Intelligent Home Beautification<br>
+            Designed with light, nature, and intelligence.
+        </p>
+    </footer>
+
+</body>
+
+</html>
